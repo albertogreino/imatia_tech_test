@@ -13,4 +13,28 @@ public class OrderTrackingDTO {
     private int orderId;
     private int statusId;
     private Date changeStatusDate;
+
+    public int getOrderId() {
+        return orderId;
+    }
+
+    public void setOrderId(int orderId) {
+        this.orderId = orderId;
+    }
+
+    public int getStatusId() {
+        return statusId;
+    }
+
+    public void setStatusId(int statusId) {
+        this.statusId = statusId;
+    }
+
+    public Date getChangeStatusDate() {
+        return changeStatusDate;
+    }
+
+    public void setChangeStatusDate(Date changeStatusDate) {
+        this.changeStatusDate = changeStatusDate;
+    }
 }

@@ -11,4 +11,12 @@ import java.util.List;
 @NoArgsConstructor
 public class OrderListTrackingRequest {
     List<OrderTrackingRequest> orderTrackings;
+
+    public List<OrderTrackingRequest> getOrderTrackings() {
+        return orderTrackings;
+    }
+
+    public void setOrderTrackings(List<OrderTrackingRequest> orderTrackings) {
+        this.orderTrackings = orderTrackings;
+    }
 }

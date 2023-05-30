@@ -16,4 +16,28 @@ public class OrderTrackingRequest {
     private int trackingStatusId;
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX")
     private Date changeStatusDate;
+
+    public int getOrderId() {
+        return orderId;
+    }
+
+    public void setOrderId(int orderId) {
+        this.orderId = orderId;
+    }
+
+    public int getTrackingStatusId() {
+        return trackingStatusId;
+    }
+
+    public void setTrackingStatusId(int trackingStatusId) {
+        this.trackingStatusId = trackingStatusId;
+    }
+
+    public Date getChangeStatusDate() {
+        return changeStatusDate;
+    }
+
+    public void setChangeStatusDate(Date changeStatusDate) {
+        this.changeStatusDate = changeStatusDate;
+    }
 }

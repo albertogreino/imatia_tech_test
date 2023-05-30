@@ -25,4 +25,36 @@ public class OrderTrackingRegistry {
     @Id
     @Column(name = "CHANGE_STATUS_DATE")
     private Date changeStatusDate;
+
+    public int getOrderId() {
+        return orderId;
+    }
+
+    public void setOrderId(int orderId) {
+        this.orderId = orderId;
+    }
+
+    public int getPrevStatusId() {
+        return prevStatusId;
+    }
+
+    public void setPrevStatusId(int prevStatusId) {
+        this.prevStatusId = prevStatusId;
+    }
+
+    public int getNewStatusId() {
+        return newStatusId;
+    }
+
+    public void setNewStatusId(int newStatusId) {
+        this.newStatusId = newStatusId;
+    }
+
+    public Date getChangeStatusDate() {
+        return changeStatusDate;
+    }
+
+    public void setChangeStatusDate(Date changeStatusDate) {
+        this.changeStatusDate = changeStatusDate;
+    }
 }
