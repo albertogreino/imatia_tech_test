@@ -19,4 +19,8 @@ public class StateTransitionValidator {
             return false;
         }
     }
+
+    public static boolean isValidTransition(int from, int to) {
+        return isValidTransition(State.values()[from - 1], State.values()[to - 1]);
+    }
 }
